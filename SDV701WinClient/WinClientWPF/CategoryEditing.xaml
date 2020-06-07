@@ -1,0 +1,27 @@
+﻿<local:Editing x:Class="WinClientWPF.CategoryEditing"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinClientWPF"
+        mc:Ignorable="d"
+        Title="CategoryEditing" Height="450" Width="800" Closing="Editing_Closing" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="tbxCategoryName" Text="{Binding Categoryname, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="139,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="tbxCategoryName"/>
+        <TextBox x:Name="tbxCategoryDescription" Text="{Binding Description, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="139,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="tbxCategoryDescription"/>
+        <ListBox x:Name="lbxParts" Margin="0,98,0,0" AutomationProperties.Name="lbxParts" MouseDoubleClick="lbxParts_MouseDoubleClick" SelectionChanged="lbxParts_SelectionChanged">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit selected..." Click="menuEdit_Click" />
+                    <Separator />
+                    <MenuItem Header="Delete selected..." Click="menuDeleteSelected_Click" />
+                </ContextMenu>
+            </ListBox.ContextMenu>
+
+        </ListBox>
+        <Label Content="Category Name:" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Category Description:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnRefresh" Content="Refresh" Margin="725,73,7,0" VerticalAlignment="Top" Click="btnRefresh_Click"/>
+
+    </Grid>
+</local:Editing>

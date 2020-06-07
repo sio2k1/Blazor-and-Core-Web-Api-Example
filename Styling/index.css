@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(224, 231, 231);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window {
+  display: grid;
+  grid-template-rows: 50px auto;
+  background-color: white;
+  border-radius: 1rem;
+  min-width: 500px;
+  width: 768px;
+  height: 500px;
+  min-height: 500px;
+  box-shadow: 3px 4px 28px -3px rgba(0, 0, 0, 0.67);
+}
+.header {
+  grid-row: 1;
+  background-color: rgb(90, 121, 151);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: aliceblue;
+}
+.caption {
+  margin: 1rem;
+}
+.content {
+  grid-row: 2;
+}

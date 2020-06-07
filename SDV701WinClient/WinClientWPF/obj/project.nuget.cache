@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "WM3dFg82KgyyMiQs21ht35wrbjqt/bwnnnRxV6UL11lnP3rC/Dnj6jigr7HvL8+6HxRiOciCW3YEUBXxY19Cqg==",
+  "success": true,
+  "projectFilePath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WinClientWPF\\WinClientWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sio\\.nuget\\packages\\google.protobuf\\3.12.2\\google.protobuf.3.12.2.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\grpc.core.api\\2.29.0\\grpc.core.api.2.29.0.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\grpc.net.client\\2.29.0\\grpc.net.client.2.29.0.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\grpc.net.client.web\\2.29.0\\grpc.net.client.web.2.29.0.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\grpc.net.common\\2.29.0\\grpc.net.common.2.29.0.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

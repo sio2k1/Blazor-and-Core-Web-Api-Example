@@ -1,0 +1,77 @@
+﻿@page "/categories/{id:int}"
+@using grpcCalls
+@using SDV701common
+@using WebClientWASM.infrastructure 
+@inherits backHandler;
+@inject NavigationManager NavigationManager
+
+<Styled @bind-Classname="@styleContainer">
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+    height: 100%;
+</Styled>
+
+
+<Window Caption="Category items list" ErrorMSG="@lastError">
+    <div class="@styleContainer">
+        <table class="table-auto w-full">
+            <thead>
+                <tr>
+                    <th class="border px-4 py-2">Name</th>
+                    <th class="border px-4 py-2">Price</th>
+                    <th class="border px-4 py-2">In Stock</th>
+                    <th class="border px-4 py-2">Details</th>
+                    <th class="border px-4 py-2">Order</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var record in lst)
+                {
+                    string qtyStyle = "";
+                    if (record.QtyInStock > 0) qtyStyle = "background-color:#C8463F;";
+                    if (record.QtyInStock > 3) qtyStyle = "background-color:#EC6A00;";
+                    if (record.QtyInStock > 5) qtyStyle = "background-color:green;";
+                    string navRoute = $"/oderitem/{@record.id}";
+                    <tr>
+                        <td class="border px-4 py-2">@record.Name</td>
+                        <td class="border px-4 py-2">@record.Price @record.Currency</td>
+                        <td class="border px-4 py-2"><p style="@qtyStyle">&nbsp;</p></td>
+                        <td class="border px-4 py-2">@((MarkupString)record.ReturnOODetails().Replace("\r\n","<br>"))</td>
+                        <td class="border px-4 py-2">
+                            <div class="flex justify-center">
+                                <NavLink class="inline-block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-1 px-3" @onclick="@(e=> { State.SelectedPart = record; NavigateWithHistory(navRoute, $"/categories/{id}", NavigationManager); })">Order now</NavLink>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</Window>
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+
+    private string styleContainer;
+    private string lastError = "";
+    private List<NPart> lst = new List<NPart>();
+    protected override async void OnInitialized()
+    {
+        WebClientWASM.infrastructure.State.previousPage = "/category";
+        lastError = "";
+        try
+        {
+            lst = (await gRPCClient.GetListOfPartsByCategoryId<NPart>(id)).FindAll(x=>x.QtyInStock>0);
+            lastError = "";
+        }
+        catch (Exception e)
+        {
+            lastError = e.GetBaseException().Message;
+        }
+        this.StateHasChanged();
+    }
+}

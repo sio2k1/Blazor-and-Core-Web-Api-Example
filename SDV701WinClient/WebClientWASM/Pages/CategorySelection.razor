@@ -1,0 +1,56 @@
+﻿@page "/category"
+@using grpcCalls
+@using SDV701common
+
+<Styled @bind-Classname="@styleContainer">
+    display: flex;
+    height: 100%;
+</Styled>
+
+<Styled @bind-Classname="@navLinkStyle">
+    margin:10px;
+</Styled>
+
+
+
+
+<Window Caption="Category selection" ErrorMSG="@lastError">
+    <div class="@styleContainer">
+        @foreach (var record in lst)
+        {
+            string navRoute = $"/categories/{@record.id}";
+            <NavLink class="@navLinkStyle" href="@navRoute">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:bg-gray-100">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">@record.Categoryname</div>
+                        <p class="text-gray-700 text-base">
+                            @record.Description
+                        </p>
+                    </div>
+                </div>
+            </NavLink>
+        }
+    </div>
+</Window>
+
+@code {
+    private string styleContainer;
+    private string navLinkStyle;
+    private string lastError = "";
+    private List<Category> lst = new List<Category>();
+
+    protected override async void OnInitialized()
+    {
+        WebClientWASM.infrastructure.State.previousPage = "/";
+        lastError = "";
+        try
+        {
+            lst = await gRPCClient.GetListOfCategories();
+        }
+        catch (Exception e)
+        {
+            lastError = e.GetBaseException().Message;
+        }
+        this.StateHasChanged();
+    }
+}

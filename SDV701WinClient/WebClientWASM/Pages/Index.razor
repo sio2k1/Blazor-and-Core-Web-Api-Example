@@ -1,0 +1,26 @@
+﻿@page "/"
+
+<Window Caption="SDV701A2: Main">
+    <div class="@styleContainer">
+
+        <NavLink href="/category">
+            <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                Category selection
+            </button>
+        </NavLink>
+    </div>
+</Window>
+<Styled @bind-Classname="@styleContainer">
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:400px;
+</Styled>
+@code
+{
+    private string styleContainer;
+}
+
+
+
+

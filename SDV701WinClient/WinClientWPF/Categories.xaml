@@ -1,0 +1,16 @@
+﻿<Window x:Class="WinClientWPF.Categories"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinClientWPF"
+        mc:Ignorable="d"
+        Title="Categories" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ListBox x:Name="lbxCategories" Margin="0,132,0,0" AutomationProperties.Name="lbxCategories" MouseDoubleClick="lbxCategories_MouseDoubleClick" SelectionChanged="lbxCategories_SelectionChanged"/>
+        <Label Content="Please use double click to edit category:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="327"/>
+        <Label Content="Selected category description:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbDescription" HorizontalAlignment="Left" Margin="16,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="774" Height="65" AutomationProperties.Name="tbDescription"/>
+
+    </Grid>
+</Window>

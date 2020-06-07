@@ -1,0 +1,9 @@
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\bin\Debug\netstandard2.1\SDV701common.deps.json
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\bin\Debug\netstandard2.1\SDV701common.dll
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\bin\Debug\netstandard2.1\SDV701common.pdb
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\obj\Debug\netstandard2.1\SDV701common.csprojAssemblyReference.cache
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\obj\Debug\netstandard2.1\SDV701common.csproj.CoreCompileInputs.cache
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\obj\Debug\netstandard2.1\SDV701common.AssemblyInfoInputs.cache
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\obj\Debug\netstandard2.1\SDV701common.AssemblyInfo.cs
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\obj\Debug\netstandard2.1\SDV701common.dll
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701BackEnd\SDV701common\obj\Debug\netstandard2.1\SDV701common.pdb

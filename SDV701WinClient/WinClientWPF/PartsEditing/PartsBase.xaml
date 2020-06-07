@@ -1,0 +1,26 @@
+﻿<local:Editing x:Class="WinClientWPF.BaseParts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinClientWPF"
+        mc:Ignorable="d"
+        Title="BaseParts" Height="450" Width="800" Closing="Editing_Closing" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="mainGrid">
+        <TextBox x:Name="tbxName" HorizontalAlignment="Left" Margin="10,49,0,0" Text="{Binding Name, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxPrice" HorizontalAlignment="Left" Margin="10,92,0,0" Text="{Binding Price, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxQty" HorizontalAlignment="Left" Margin="152,92,0,0" Text="{Binding QtyInStock, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxLastModified" HorizontalAlignment="Left" Margin="300,49,0,0" Text="{Binding LastModified, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" IsEnabled="False"/>
+        <ComboBox x:Name="CategoryID" HorizontalAlignment="Left" Margin="152,47,0,0" VerticalAlignment="Top" Width="120"
+                  DisplayMemberPath="Categoryname"
+                  SelectedValuePath="id"
+                  SelectedValue="{Binding CategoryID, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        <ContentControl x:Name="extraSpecs" HorizontalContentAlignment="Left" Content="ContentControl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="306" Width="800" Margin="0,128,0,0"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Current price:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Quantity in stock:" HorizontalAlignment="Left" Margin="152,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Category:" HorizontalAlignment="Left" Margin="152,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last modified:" HorizontalAlignment="Left" Margin="300,18,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</local:Editing>

@@ -1,0 +1,103 @@
+﻿@using WebClientWASM.infrastructure 
+<div class="@mainContainer">
+    <div class="@window">
+        <div class="@header">
+            <div class="@caption">
+                @Caption
+            </div>
+        </div>
+        <div class="@content">@ChildContent</div>
+        @if (!string.IsNullOrEmpty(ErrorMSG))
+        {
+            <div class="@error">
+                <div role="alert">
+                    <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+                        Error
+                    </div>
+                    <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                        <p>@ErrorMSG</p>
+                    </div>
+                </div>
+        </div>
+        }
+        <div class="@nav">
+            @if (!string.IsNullOrEmpty(State.previousPage))
+            {
+                string url = State.previousPage;
+                <NavLink href="@url">
+                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Back
+                    </button>
+                </NavLink>
+            }
+        </div>
+    </div>
+</div>
+
+<Styled>
+    a {
+    cursor: pointer;
+    }
+</Styled>
+
+<Styled @bind-Classname="@caption">
+    margin: 1rem;
+    font-size: large;
+</Styled>
+<Styled @bind-Classname="@mainContainer">
+    background-color: rgb(224, 231, 231);;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+</Styled>
+<Styled @bind-Classname="@window">
+    display: flex;
+    flex-direction: column;
+    /*grid-template-rows: 50px auto 80px 80px;*/
+    background-color: white;
+    border-radius: 1rem;
+    min-width: 1024px;
+    width: 1024px;
+    min-height: 576px;
+    box-shadow: 3px 4px 28px -3px rgba(0, 0, 0, 0.67);
+</Styled>
+<Styled @bind-Classname="@header">
+    grid-row: 1;
+    background-color: rgb(90, 121, 151);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: aliceblue;
+    flex-basis:50px;
+</Styled>
+<Styled @bind-Classname="@content">
+    margin: 1rem;
+    flex: 1;
+    grid-row: 2;
+</Styled>
+<Styled @bind-Classname="@error">
+    margin: 1rem;
+    flex-basis:80px;
+    grid-row: 3;
+</Styled>
+<Styled @bind-Classname="@nav">
+    grid-row: 4;
+    flex-basis:50px;
+    margin: 1rem;
+</Styled>
+
+@code {
+    [Parameter]
+    public string ErrorMSG { get; set; }
+    [Parameter]
+    public string Caption { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    private string mainContainer;
+    private string window;
+    private string header;
+    private string caption;
+    private string content;
+    private string error;
+    private string nav;
+}

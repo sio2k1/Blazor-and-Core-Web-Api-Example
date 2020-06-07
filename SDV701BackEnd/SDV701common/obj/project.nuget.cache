@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xOv9zFwpGTy86Z67mypJPm/pDeiEzGoKFlYzIGZpeKg4sr42XuPNzCbL1PGhOc5vd5l77rKWhgydDHoWzbFOOQ==",
+  "success": true,
+  "projectFilePath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701BackEnd\\SDV701common\\SDV701common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sio\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,2 @@
+obj\Release\netstandard2.1/Netshop.cs \
+obj\Release\netstandard2.1/NetshopGrpc.cs: ../../SDV701BackEnd/SDV701BackEnd/Protos/netshop.proto

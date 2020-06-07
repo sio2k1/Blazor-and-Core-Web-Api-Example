@@ -1,0 +1,2 @@
+obj\Release\netstandard2.1/Greet.cs \
+obj\Release\netstandard2.1/GreetGrpc.cs: ../../SDV701BackEnd/SDV701BackEnd/Protos/greet.proto

@@ -1,0 +1,73 @@
+syntax = "proto3";
+
+option csharp_namespace = "SDV701BackEnd.Protos";
+
+package netshop;
+
+// The greeting service definition.
+service Netshop {
+  // Sends a greeting
+  rpc GetParts (GetAllRequest) returns (GetHierarchicalJsonSerializedResponse);
+  rpc GetPartsByCategoryId (GetByIdRequest) returns (GetJsonSerializedResponse);
+  rpc GetPartById (GetByIdRequest) returns (GetJsonSerializedResponse);
+  rpc GetCategories (GetAllRequest) returns (GetJsonSerializedResponse);
+  rpc GetOrders (GetAllRequest) returns (GetJsonSerializedResponse);
+  rpc PlaceOrder (PlaceOrderRequest) returns (InsertResponse);
+  rpc Update (SetRequest) returns (DeleteUpdateResponse);
+  rpc Insert (SetRequest) returns (InsertResponse);
+  rpc Delete (SetRequest) returns (DeleteUpdateResponse);
+}
+
+message PlaceOrderRequest
+{
+	int32 PartsId = 1;
+	int32 PartsQty = 2;
+	string ClientName =3;
+	string ClientEMail =4;
+}
+
+message GetAllRequest { }
+
+message SetRequest {
+	string systemType = 1;
+	string assembly = 2;
+	string JSON = 3;
+	string TPHType = 4;
+}
+message basicResponse {
+	string errorResponse = 1;
+}
+message InsertResponse {
+	basicResponse error = 1;
+	int32 insertedID = 2; 
+}
+message DeleteUpdateResponse {
+	basicResponse error = 1;
+	int32 rowsAffected = 2; 
+}
+
+message GetByIdRequest {
+	int32 Id = 1;
+}
+
+// The response message containing the greetings.
+message GetPartsResponse {
+  string message = 1;
+  string response = 2;
+}
+
+message GetHierarchicalJsonSerializedResponse {
+  string systemType = 1;
+  string assembly = 2;
+  string response = 3;
+  string errorMessage = 4; 
+}
+message GetJsonSerializedResponse {
+  string response = 1;
+  string errorMessage = 2; 
+}
+
+message GetMessageResponse {
+  string response = 1;
+  string errorMessage = 2; 
+}

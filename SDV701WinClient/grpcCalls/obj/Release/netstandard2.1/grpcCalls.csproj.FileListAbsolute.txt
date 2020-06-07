@@ -1,0 +1,12 @@
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\bin\Release\netstandard2.1\grpcCalls.deps.json
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\bin\Release\netstandard2.1\grpcCalls.dll
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\bin\Release\netstandard2.1\grpcCalls.pdb
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\bin\Release\netstandard2.1\SDV701common.dll
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\bin\Release\netstandard2.1\SDV701common.pdb
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.csprojAssemblyReference.cache
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.AssemblyInfoInputs.cache
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.AssemblyInfo.cs
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.csproj.CoreCompileInputs.cache
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.csproj.CopyComplete
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.dll
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\grpcCalls\obj\Release\netstandard2.1\grpcCalls.pdb
