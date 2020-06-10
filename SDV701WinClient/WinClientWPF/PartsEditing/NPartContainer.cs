@@ -6,7 +6,7 @@ using System.Windows.Controls;
 
 namespace WinClientWPF
 {
-    public class NPartContainer : UserControl
+    public abstract class NPartContainer : UserControl
     {
         NPart _part;
         public NPartContainer(NPart part)

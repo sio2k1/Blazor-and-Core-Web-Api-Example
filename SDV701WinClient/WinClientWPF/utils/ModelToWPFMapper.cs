@@ -6,7 +6,7 @@ using System.Windows.Controls;
 
 namespace WinClientWPF.utils
 {
-    public class cbxItem
+   /* public class cbxItem
     {
         public int id { get; set; }
         public object obj { get; set; }
@@ -133,5 +133,5 @@ namespace WinClientWPF.utils
                 }
             });
         }
-    }
+    }*/
 }

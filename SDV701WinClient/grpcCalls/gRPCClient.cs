@@ -1,19 +1,15 @@
 ﻿using Grpc.Net.Client;
-using SDV701BackEnd;
-using SDV701BackEnd.Protos;
-using System;
-using System.Runtime.Serialization.Json;
-using static SDV701BackEnd.Protos.Netshop;
-//using System.Text.Json;
-using System.Data;
-using System.Collections.Generic;
-using System.Reflection;
-using Newtonsoft.Json;
-using System.Threading.Tasks;
-using SDV701common;
-using System.Net.Http;
 using Grpc.Net.Client.Web;
+using Newtonsoft.Json;
+using SDV701BackEnd.Protos;
+using SDV701common;
+using System;
+//using System.Text.Json;
+using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using static SDV701BackEnd.Protos.Netshop;
 
 namespace grpcCalls
 {

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace WinClientWPF.PartsEditing
 {
-    interface IEditFormContainer
+    /*interface IEditFormContainer
     {
         NPart UpdateNPartWithContainerValues(NPart part);
         void UpdateContainerWithNPartValues(NPart part);
-    }
+    }*/
 
 
 }

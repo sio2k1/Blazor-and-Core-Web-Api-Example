@@ -477,12 +477,12 @@ E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\Razor\Pages\CategoryItems.razor.g.cs
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\RazorDeclaration\Pages\OrderItem.razor.g.cs
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\Razor\Pages\OrderItem.razor.g.cs
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\O-99MNX884hYp-LQMGu-fCesBpxxHT-jSCAr2wCjA50=.hash
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\IEf0wmdwBoWsi5w8luLBZMhLMCU9VyupMj9I0x1ulvw=.hash
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\oBfb4asQyM-PzZBzDuYBJsZdFZnfWHJmy1R36QmDTUY=.hash
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\RK356qPKoZDvcwceYHem3EF9eon3KThwJyMMbfaNw_Q=.hash
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\RazorDeclaration\components\ConfirmationMessage.razor.g.cs
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\Razor\components\ConfirmationMessage.razor.g.cs
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\xp1Kp86qCIguTFVMdiexS3EsM_go_bIME5WIAZ1c2nM=.hash
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\mxy0gi1GGutoA9JlzQmp5G55_7CTm-rsK2EhCgOQr9k=.hash
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\0lkWBqV8YNP3d4P4NHnjgw84mnLbrpsmTsyxinLlY9g=.hash
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\GyBhI9ECyPk9nOskmevGgc5cNYPbD1vuRJRzgg6k_uo=.hash
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\8x8oVD7hA9hSyJS1oXqF-kfmph5-lydAtdxdrpJrw_Q=.hash
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\lQ6D1epRX5aCR2aCxQ9EiH0BmZEv-NVqIA25uCMTqas=.hash
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\pOdV0RCYM5coRhGY8VVtLPiVXRVKevRaqkJfayazFbg=.hash
+E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WebClientWASM\obj\Debug\netstandard2.1\integrity\0vt5wgEWOsrvMp6ZeOq9Zgd4jOP87OXGRJnIs3CYaPA=.hash

@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace WinClientWPF
 {
-    public class Editing : Window
+    public abstract class Editing : Window
     {
         protected object _obj;
         protected string originalSerializedObj;

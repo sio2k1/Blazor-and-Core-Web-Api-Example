@@ -4,8 +4,8 @@ using System.Text;
 
 namespace WinClientWPF.PartsEditing
 {
-    interface IValidable
+    /*interface IValidable
     {
         bool isDataValid();
-    }
+    }*/
 }

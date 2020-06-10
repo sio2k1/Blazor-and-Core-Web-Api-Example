@@ -22,18 +22,18 @@ namespace WinClientWPF
     /// <summary>
     /// Interaction logic for BaseParts.xaml
     /// </summary>
+    public class SubItem
+    {
+        public Type itemType { get; set; }
+        public Type TPHtype { get; set; }
+        public Type DisplayComponent { get; set; }
+
+    }
     public partial class BaseParts : Editing
     {
         private NPart part;
 
-        public class SubItem
-        {
-            public Type itemType { get; set; }
-            public Type TPHtype { get; set; }
 
-            public Type DisplayComponent { get; set; }
-
-        }
         public BaseParts(NPart prt)
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace WinClientWPF
             DataContext = part;
 
             List<SubItem> lst = new List<SubItem> {
-                new SubItem { itemType= typeof(NWiredPart), DisplayComponent = typeof(PartsWired),TPHtype = typeof(NPart) } ,
+                new SubItem { itemType= typeof(NWiredPart), DisplayComponent = typeof(PartsWired), TPHtype = typeof(NPart) } ,
                 new SubItem { itemType= typeof(NWiredWirelesspart),DisplayComponent = typeof(PartsWiredWireless) ,TPHtype = typeof(NPart) } ,
                 new SubItem { itemType= typeof(NWirelesspart), DisplayComponent = typeof(PartsWireless), TPHtype = typeof(NPart) }
             };
