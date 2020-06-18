@@ -23,9 +23,6 @@
     <ProjectReference Include="..\..\SDV701BackEnd\SDV701common\SDV701common.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Protobuf Include="..\..\SDV701BackEnd\SDV701BackEnd\Protos\greet.proto" GrpcServices="Client">
-      <Link>Protos\greet.proto</Link>
-    </Protobuf>
     <Protobuf Include="..\..\SDV701BackEnd\SDV701BackEnd\Protos\netshop.proto" GrpcServices="Client">
       <Link>Protos\netshop.proto</Link>
     </Protobuf>

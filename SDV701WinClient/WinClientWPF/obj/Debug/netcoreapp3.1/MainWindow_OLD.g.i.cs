@@ -53,7 +53,7 @@ namespace WinClientWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WinClientWPF;V1.0.0.0;component/mainwindow_old.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WinClientWPF;component/mainwindow_old.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWindow_OLD.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

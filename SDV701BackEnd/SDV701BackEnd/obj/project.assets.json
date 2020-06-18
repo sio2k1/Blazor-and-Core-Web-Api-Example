@@ -1162,8 +1162,7 @@
   },
   "packageFolders": {
     "C:\\Users\\sio\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1175,8 +1174,7 @@
       "outputPath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701BackEnd\\SDV701BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\sio\\AppData\\Roaming\\NuGet\\NuGet.Config",

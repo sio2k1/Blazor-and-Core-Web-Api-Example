@@ -14,8 +14,7 @@
         "outputPath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701BackEnd\\SDV701common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\sio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,8 +77,7 @@
         "outputPath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\grpcCalls\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\sio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -167,8 +165,7 @@
         "outputPath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\sio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -206,6 +203,10 @@
             "BlazorStyled": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[2.1.6, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",

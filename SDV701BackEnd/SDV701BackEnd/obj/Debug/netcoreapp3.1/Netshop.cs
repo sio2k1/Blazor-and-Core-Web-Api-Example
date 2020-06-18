@@ -41,22 +41,25 @@ namespace SDV701BackEnd.Protos {
             "IAEoCSJDChlHZXRKc29uU2VyaWFsaXplZFJlc3BvbnNlEhAKCHJlc3BvbnNl",
             "GAEgASgJEhQKDGVycm9yTWVzc2FnZRgCIAEoCSI8ChJHZXRNZXNzYWdlUmVz",
             "cG9uc2USEAoIcmVzcG9uc2UYASABKAkSFAoMZXJyb3JNZXNzYWdlGAIgASgJ",
-            "MosFCgdOZXRzaG9wElIKCEdldFBhcnRzEhYubmV0c2hvcC5HZXRBbGxSZXF1",
-            "ZXN0Gi4ubmV0c2hvcC5HZXRIaWVyYXJjaGljYWxKc29uU2VyaWFsaXplZFJl",
-            "c3BvbnNlElMKFEdldFBhcnRzQnlDYXRlZ29yeUlkEhcubmV0c2hvcC5HZXRC",
-            "eUlkUmVxdWVzdBoiLm5ldHNob3AuR2V0SnNvblNlcmlhbGl6ZWRSZXNwb25z",
-            "ZRJKCgtHZXRQYXJ0QnlJZBIXLm5ldHNob3AuR2V0QnlJZFJlcXVlc3QaIi5u",
-            "ZXRzaG9wLkdldEpzb25TZXJpYWxpemVkUmVzcG9uc2USSwoNR2V0Q2F0ZWdv",
-            "cmllcxIWLm5ldHNob3AuR2V0QWxsUmVxdWVzdBoiLm5ldHNob3AuR2V0SnNv",
-            "blNlcmlhbGl6ZWRSZXNwb25zZRJHCglHZXRPcmRlcnMSFi5uZXRzaG9wLkdl",
-            "dEFsbFJlcXVlc3QaIi5uZXRzaG9wLkdldEpzb25TZXJpYWxpemVkUmVzcG9u",
-            "c2USQQoKUGxhY2VPcmRlchIaLm5ldHNob3AuUGxhY2VPcmRlclJlcXVlc3Qa",
-            "Fy5uZXRzaG9wLkluc2VydFJlc3BvbnNlEjwKBlVwZGF0ZRITLm5ldHNob3Au",
-            "U2V0UmVxdWVzdBodLm5ldHNob3AuRGVsZXRlVXBkYXRlUmVzcG9uc2USNgoG",
-            "SW5zZXJ0EhMubmV0c2hvcC5TZXRSZXF1ZXN0GhcubmV0c2hvcC5JbnNlcnRS",
-            "ZXNwb25zZRI8CgZEZWxldGUSEy5uZXRzaG9wLlNldFJlcXVlc3QaHS5uZXRz",
-            "aG9wLkRlbGV0ZVVwZGF0ZVJlc3BvbnNlQheqAhRTRFY3MDFCYWNrRW5kLlBy",
-            "b3Rvc2IGcHJvdG8z"));
+            "IlIKG0dldENhdGVnb3J5TGlzdEhhc2hSZXNwb25zZRIlCgVlcnJvchgBIAEo",
+            "CzIWLm5ldHNob3AuYmFzaWNSZXNwb25zZRIMCgRoYXNoGAIgASgJMt4FCgdO",
+            "ZXRzaG9wElIKCEdldFBhcnRzEhYubmV0c2hvcC5HZXRBbGxSZXF1ZXN0Gi4u",
+            "bmV0c2hvcC5HZXRIaWVyYXJjaGljYWxKc29uU2VyaWFsaXplZFJlc3BvbnNl",
+            "ElMKFEdldFBhcnRzQnlDYXRlZ29yeUlkEhcubmV0c2hvcC5HZXRCeUlkUmVx",
+            "dWVzdBoiLm5ldHNob3AuR2V0SnNvblNlcmlhbGl6ZWRSZXNwb25zZRJKCgtH",
+            "ZXRQYXJ0QnlJZBIXLm5ldHNob3AuR2V0QnlJZFJlcXVlc3QaIi5uZXRzaG9w",
+            "LkdldEpzb25TZXJpYWxpemVkUmVzcG9uc2USSwoNR2V0Q2F0ZWdvcmllcxIW",
+            "Lm5ldHNob3AuR2V0QWxsUmVxdWVzdBoiLm5ldHNob3AuR2V0SnNvblNlcmlh",
+            "bGl6ZWRSZXNwb25zZRJRChFHZXRDYXRlZ29yaWVzSGFzaBIWLm5ldHNob3Au",
+            "R2V0QWxsUmVxdWVzdBokLm5ldHNob3AuR2V0Q2F0ZWdvcnlMaXN0SGFzaFJl",
+            "c3BvbnNlEkcKCUdldE9yZGVycxIWLm5ldHNob3AuR2V0QWxsUmVxdWVzdBoi",
+            "Lm5ldHNob3AuR2V0SnNvblNlcmlhbGl6ZWRSZXNwb25zZRJBCgpQbGFjZU9y",
+            "ZGVyEhoubmV0c2hvcC5QbGFjZU9yZGVyUmVxdWVzdBoXLm5ldHNob3AuSW5z",
+            "ZXJ0UmVzcG9uc2USPAoGVXBkYXRlEhMubmV0c2hvcC5TZXRSZXF1ZXN0Gh0u",
+            "bmV0c2hvcC5EZWxldGVVcGRhdGVSZXNwb25zZRI2CgZJbnNlcnQSEy5uZXRz",
+            "aG9wLlNldFJlcXVlc3QaFy5uZXRzaG9wLkluc2VydFJlc3BvbnNlEjwKBkRl",
+            "bGV0ZRITLm5ldHNob3AuU2V0UmVxdWVzdBodLm5ldHNob3AuRGVsZXRlVXBk",
+            "YXRlUmVzcG9uc2VCF6oCFFNEVjcwMUJhY2tFbmQuUHJvdG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,7 +73,8 @@ namespace SDV701BackEnd.Protos {
             new pbr::GeneratedClrTypeInfo(typeof(global::SDV701BackEnd.Protos.GetPartsResponse), global::SDV701BackEnd.Protos.GetPartsResponse.Parser, new[]{ "Message", "Response" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SDV701BackEnd.Protos.GetHierarchicalJsonSerializedResponse), global::SDV701BackEnd.Protos.GetHierarchicalJsonSerializedResponse.Parser, new[]{ "SystemType", "Assembly", "Response", "ErrorMessage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::SDV701BackEnd.Protos.GetJsonSerializedResponse), global::SDV701BackEnd.Protos.GetJsonSerializedResponse.Parser, new[]{ "Response", "ErrorMessage" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::SDV701BackEnd.Protos.GetMessageResponse), global::SDV701BackEnd.Protos.GetMessageResponse.Parser, new[]{ "Response", "ErrorMessage" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::SDV701BackEnd.Protos.GetMessageResponse), global::SDV701BackEnd.Protos.GetMessageResponse.Parser, new[]{ "Response", "ErrorMessage" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SDV701BackEnd.Protos.GetCategoryListHashResponse), global::SDV701BackEnd.Protos.GetCategoryListHashResponse.Parser, new[]{ "Error", "Hash" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1867,6 +1871,169 @@ namespace SDV701BackEnd.Protos {
           }
           case 18: {
             ErrorMessage = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class GetCategoryListHashResponse : pb::IMessage<GetCategoryListHashResponse> {
+    private static readonly pb::MessageParser<GetCategoryListHashResponse> _parser = new pb::MessageParser<GetCategoryListHashResponse>(() => new GetCategoryListHashResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<GetCategoryListHashResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::SDV701BackEnd.Protos.NetshopReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetCategoryListHashResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetCategoryListHashResponse(GetCategoryListHashResponse other) : this() {
+      error_ = other.error_ != null ? other.error_.Clone() : null;
+      hash_ = other.hash_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public GetCategoryListHashResponse Clone() {
+      return new GetCategoryListHashResponse(this);
+    }
+
+    /// <summary>Field number for the "error" field.</summary>
+    public const int ErrorFieldNumber = 1;
+    private global::SDV701BackEnd.Protos.basicResponse error_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::SDV701BackEnd.Protos.basicResponse Error {
+      get { return error_; }
+      set {
+        error_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hash" field.</summary>
+    public const int HashFieldNumber = 2;
+    private string hash_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Hash {
+      get { return hash_; }
+      set {
+        hash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as GetCategoryListHashResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(GetCategoryListHashResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Error, other.Error)) return false;
+      if (Hash != other.Hash) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (error_ != null) hash ^= Error.GetHashCode();
+      if (Hash.Length != 0) hash ^= Hash.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (error_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Error);
+      }
+      if (Hash.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Hash);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (error_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Error);
+      }
+      if (Hash.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Hash);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(GetCategoryListHashResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.error_ != null) {
+        if (error_ == null) {
+          Error = new global::SDV701BackEnd.Protos.basicResponse();
+        }
+        Error.MergeFrom(other.Error);
+      }
+      if (other.Hash.Length != 0) {
+        Hash = other.Hash;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (error_ == null) {
+              Error = new global::SDV701BackEnd.Protos.basicResponse();
+            }
+            input.ReadMessage(Error);
+            break;
+          }
+          case 18: {
+            Hash = input.ReadString();
             break;
           }
         }

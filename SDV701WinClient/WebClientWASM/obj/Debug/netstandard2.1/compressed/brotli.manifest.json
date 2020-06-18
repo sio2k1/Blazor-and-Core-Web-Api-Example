@@ -1,12 +1,12 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GyBhI9ECyPk9nOskmevGgc5cNYPbD1vuRJRzgg6k_uo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\UfjXnU8cQrsOtArh-tv4p9Zpq1CaT3-wQlvwO1q4Z_s=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebClientWASM.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebClientWASM.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ycn-UHLnjC77BNvsurP4mkuYP8oud1oVyfSSlZKMymc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\o_nIDOlv_7C51lX5qskB167ESJHrLYQiPQU9lsq7bOk=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
     },
@@ -121,7 +121,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8x8oVD7hA9hSyJS1oXqF-kfmph5-lydAtdxdrpJrw_Q=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JO00r2PB_CUpur7DX_hpgOdgIVuZJdolIXjW2S4ee2s=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\grpcCalls.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/grpcCalls.dll.br"
     },
@@ -196,7 +196,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Grpc.Core.Api.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\45ia6XmGIa5WI3cHUIE9KhVornlZleYW_B5FPpfD1wQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FLKi_O-D48y2Q_u0cQQAJwAzEN1bflbewrsQC0o3WCE=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
     },
@@ -211,7 +211,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorStyled.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\21Eo58gZGe1h56KPVgJXZnNVIdVd6CjTrjnPM3RFMGI=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
     },
@@ -251,12 +251,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8Y81cOKaNJHZZvHu0TROikruBOenBHdE5WwI2BOkNNE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\wiJ-tTsfR06mqIO4AUWTWR8o2QTwBlCvRdrZZzf66aQ=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\jqp6xS5jDFDsISGorhiYZQ2if3hAiols6d4C5BNnMQ4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4AR-s5kiD6WZfdsfrOTAC7K5ZH8nISQUl5_ibhhhGxM=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
     },
@@ -271,12 +271,27 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\e0FY4g2Vt8TsXfafkXU2XnUgcYzjzPiFqb3KCylDb74=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\INh_HEyd1tejV3ZiCSKTS1pM9lhRRmWPDPOhWVHgiPY=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Forms.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\v4LhihP26fP-dVajppSCZIrCVbkiALCJgAisyG2cmJQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\0tyMwROLk1T7Zk3sBPCBmYsmeKF_OXHob6Ivyy7naNU=.hash",
+      "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GKaZ0pXdDDK2UC6Tw1-gfhTeOXd3CwLpmzElLFXH2Yg=.hash",
+      "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CROii6U-WcOecMUC573SxJfwyoWbwOwlUT92yCPEh8Q=.hash",
+      "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\P1OQnoHnOHvc97vE2VWr6zImvNN0VhdUxnH1ccLhuH0=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
     },
@@ -284,11 +299,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\sifIvl02zqfSiv67ZRAsSa_NCvhMgTGrIUNuK8LmCNM=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DG1MjidH81NA50uWH63eWmXLCxt18sJzoF2oXVlyvlY=.hash",
-      "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Primitives.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iUTfpj7A29tIp2gl2fLM_w1MwyI8XMmUV8gFe_mJBZI=.hash",
@@ -331,22 +341,17 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oAIlpv09S-0jXnze744E1V88Oaw8Ql1x3Alw0hsVYdw=.hash",
-      "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.br"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dwm_rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\lQ6D1epRX5aCR2aCxQ9EiH0BmZEv-NVqIA25uCMTqas=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\zcsa0_aRpOYOtmiexvykehTubyU5SJnjpbkcCxvBkkg=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebClientWASM.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebClientWASM.pdb.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\pOdV0RCYM5coRhGY8VVtLPiVXRVKevRaqkJfayazFbg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Th_z7dK9i1Rl3tjhNGjIAvXLjEA14FMJ6jGzOPCjrFM=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\grpcCalls.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/grpcCalls.pdb.br"
     },
@@ -401,7 +406,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\0vt5wgEWOsrvMp6ZeOq9Zgd4jOP87OXGRJnIs3CYaPA=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\NoQnaE3Cf-9Kjd7PIvRTYzL3tKFScYjE5Gdfk0jeLeI=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

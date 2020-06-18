@@ -19,6 +19,7 @@ namespace SDV701BackEnd.Protos {
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetHierarchicalJsonSerializedResponse> __Marshaller_netshop_GetHierarchicalJsonSerializedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetHierarchicalJsonSerializedResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetByIdRequest> __Marshaller_netshop_GetByIdRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetByIdRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetJsonSerializedResponse> __Marshaller_netshop_GetJsonSerializedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetJsonSerializedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetCategoryListHashResponse> __Marshaller_netshop_GetCategoryListHashResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetCategoryListHashResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.PlaceOrderRequest> __Marshaller_netshop_PlaceOrderRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.PlaceOrderRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.InsertResponse> __Marshaller_netshop_InsertResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.InsertResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.SetRequest> __Marshaller_netshop_SetRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.SetRequest.Parser.ParseFrom);
@@ -51,6 +52,13 @@ namespace SDV701BackEnd.Protos {
         "GetCategories",
         __Marshaller_netshop_GetAllRequest,
         __Marshaller_netshop_GetJsonSerializedResponse);
+
+    static readonly grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetCategoryListHashResponse> __Method_GetCategoriesHash = new grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetCategoryListHashResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCategoriesHash",
+        __Marshaller_netshop_GetAllRequest,
+        __Marshaller_netshop_GetCategoryListHashResponse);
 
     static readonly grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse> __Method_GetOrders = new grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse>(
         grpc::MethodType.Unary,
@@ -123,6 +131,11 @@ namespace SDV701BackEnd.Protos {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      public virtual global::System.Threading.Tasks.Task<global::SDV701BackEnd.Protos.GetCategoryListHashResponse> GetCategoriesHash(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       public virtual global::System.Threading.Tasks.Task<global::SDV701BackEnd.Protos.GetJsonSerializedResponse> GetOrders(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -159,6 +172,7 @@ namespace SDV701BackEnd.Protos {
           .AddMethod(__Method_GetPartsByCategoryId, serviceImpl.GetPartsByCategoryId)
           .AddMethod(__Method_GetPartById, serviceImpl.GetPartById)
           .AddMethod(__Method_GetCategories, serviceImpl.GetCategories)
+          .AddMethod(__Method_GetCategoriesHash, serviceImpl.GetCategoriesHash)
           .AddMethod(__Method_GetOrders, serviceImpl.GetOrders)
           .AddMethod(__Method_PlaceOrder, serviceImpl.PlaceOrder)
           .AddMethod(__Method_Update, serviceImpl.Update)
@@ -176,6 +190,7 @@ namespace SDV701BackEnd.Protos {
       serviceBinder.AddMethod(__Method_GetPartsByCategoryId, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.GetByIdRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse>(serviceImpl.GetPartsByCategoryId));
       serviceBinder.AddMethod(__Method_GetPartById, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.GetByIdRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse>(serviceImpl.GetPartById));
       serviceBinder.AddMethod(__Method_GetCategories, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse>(serviceImpl.GetCategories));
+      serviceBinder.AddMethod(__Method_GetCategoriesHash, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetCategoryListHashResponse>(serviceImpl.GetCategoriesHash));
       serviceBinder.AddMethod(__Method_GetOrders, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse>(serviceImpl.GetOrders));
       serviceBinder.AddMethod(__Method_PlaceOrder, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.PlaceOrderRequest, global::SDV701BackEnd.Protos.InsertResponse>(serviceImpl.PlaceOrder));
       serviceBinder.AddMethod(__Method_Update, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::SDV701BackEnd.Protos.SetRequest, global::SDV701BackEnd.Protos.DeleteUpdateResponse>(serviceImpl.Update));

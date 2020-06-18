@@ -47,36 +47,20 @@ namespace SDV701BackEnd
 
 
 
-            /*
 
-            List<Type> tl = new List<Type> { typeof(NWiredWirelesspart), typeof(NWiredPart), typeof(NWirelesspart) };
-            List<NPart> res = DB.DBExecuter.SQLToReader("select * from Npart").MapHierarchy<NPart>(tl, "ClassName");
+            /*app.UseGrpcWeb(new GrpcWebOptions { DefaultEnabled = true });
+            app.UseCors("AllowAll");*/
 
-            SerializationTests.Ser();
-
-            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
-
-
-
-
-            var json = JsonConvert.SerializeObject(res, settings);
-
-            var deserialized = JsonConvert.DeserializeObject<List<NPart>>(json, settings);
-
-            Console.WriteLine(deserialized.ToString());   */
-
-            //app.UseGrpcWeb();
-
-            app.UseGrpcWeb(new GrpcWebOptions { DefaultEnabled = true });
-            app.UseCors("AllowAll");
-            //
 
             app.UseRouting();
 
+            app.UseGrpcWeb();
+            app.UseCors();
+
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapGrpcService<GreeterService>();
-                endpoints.MapGrpcService<NetshopService>();
+                endpoints.MapGrpcService<NetshopService>().EnableGrpcWeb().RequireCors("AllowAll");
+                //endpoints.MapGrpcService<NetshopService>();
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");

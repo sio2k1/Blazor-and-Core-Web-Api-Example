@@ -19,6 +19,7 @@ namespace SDV701BackEnd.Protos {
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetHierarchicalJsonSerializedResponse> __Marshaller_netshop_GetHierarchicalJsonSerializedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetHierarchicalJsonSerializedResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetByIdRequest> __Marshaller_netshop_GetByIdRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetByIdRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetJsonSerializedResponse> __Marshaller_netshop_GetJsonSerializedResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetJsonSerializedResponse.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.GetCategoryListHashResponse> __Marshaller_netshop_GetCategoryListHashResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.GetCategoryListHashResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.PlaceOrderRequest> __Marshaller_netshop_PlaceOrderRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.PlaceOrderRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.InsertResponse> __Marshaller_netshop_InsertResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.InsertResponse.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::SDV701BackEnd.Protos.SetRequest> __Marshaller_netshop_SetRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::SDV701BackEnd.Protos.SetRequest.Parser.ParseFrom);
@@ -51,6 +52,13 @@ namespace SDV701BackEnd.Protos {
         "GetCategories",
         __Marshaller_netshop_GetAllRequest,
         __Marshaller_netshop_GetJsonSerializedResponse);
+
+    static readonly grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetCategoryListHashResponse> __Method_GetCategoriesHash = new grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetCategoryListHashResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCategoriesHash",
+        __Marshaller_netshop_GetAllRequest,
+        __Marshaller_netshop_GetCategoryListHashResponse);
 
     static readonly grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse> __Method_GetOrders = new grpc::Method<global::SDV701BackEnd.Protos.GetAllRequest, global::SDV701BackEnd.Protos.GetJsonSerializedResponse>(
         grpc::MethodType.Unary,
@@ -207,6 +215,22 @@ namespace SDV701BackEnd.Protos {
       public virtual grpc::AsyncUnaryCall<global::SDV701BackEnd.Protos.GetJsonSerializedResponse> GetCategoriesAsync(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetCategories, null, options, request);
+      }
+      public virtual global::SDV701BackEnd.Protos.GetCategoryListHashResponse GetCategoriesHash(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCategoriesHash(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual global::SDV701BackEnd.Protos.GetCategoryListHashResponse GetCategoriesHash(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCategoriesHash, null, options, request);
+      }
+      public virtual grpc::AsyncUnaryCall<global::SDV701BackEnd.Protos.GetCategoryListHashResponse> GetCategoriesHashAsync(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCategoriesHashAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      public virtual grpc::AsyncUnaryCall<global::SDV701BackEnd.Protos.GetCategoryListHashResponse> GetCategoriesHashAsync(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCategoriesHash, null, options, request);
       }
       public virtual global::SDV701BackEnd.Protos.GetJsonSerializedResponse GetOrders(global::SDV701BackEnd.Protos.GetAllRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {

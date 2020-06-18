@@ -1,4 +1,5 @@
 ﻿@page "/category"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 @using grpcCalls
 @using SDV701common
 
@@ -39,13 +40,41 @@
     private string lastError = "";
     private List<Category> lst = new List<Category>();
 
+    private async Task getNSaveLst(string hash)
+    {
+        lst = await gRPCClient.GetListOfCategories();
+        await localStorage.SetItemAsync("catData", lst);
+        await localStorage.SetItemAsync("catHash", hash);
+    }
+
     protected override async void OnInitialized()
     {
         WebClientWASM.infrastructure.State.previousPage = "/";
         lastError = "";
         try
         {
-            lst = await gRPCClient.GetListOfCategories();
+            //await localStorage.SetItemAsync("name", "John Smith");
+            string currentHash = await localStorage.GetItemAsync<string>("catHash");
+            string hash = await gRPCClient.GetCategoriesHash();
+
+            if (currentHash == hash)
+            {
+                //load from local
+                try
+                {
+                    lst = await localStorage.GetItemAsync<List<Category>>("catData");
+                    if (lst == null)
+                        throw new Exception("Lst is empty");
+                } catch
+                {
+                    await getNSaveLst(hash);
+                }
+            }
+            else
+            {
+                await getNSaveLst(hash);
+            }
+            
         }
         catch (Exception e)
         {

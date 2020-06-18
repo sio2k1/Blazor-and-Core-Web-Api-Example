@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R3GevRK63b3islh+WTOH8LaO8w/wwn4UUfJd6RuVzs6tR2zXHwQO4Eq7e9EOuTZgs2MeB0I7D55NGdxk5Zq2mA==",
+  "dgSpecHash": "XKmTmf08tEtZUWstoGF6jrBxWpTwsWfDug33ENQ63VtwGJOcEJci7KF1UnDhvaZJa3WmU+QHXOEKLVigIcp4jw==",
   "success": true,
   "projectFilePath": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WinClientWPF\\WinClientWPF.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\sio\\.nuget\\packages\\grpc.net.client\\2.29.0\\grpc.net.client.2.29.0.nupkg.sha512",
     "C:\\Users\\sio\\.nuget\\packages\\grpc.net.client.web\\2.29.0\\grpc.net.client.web.2.29.0.nupkg.sha512",
     "C:\\Users\\sio\\.nuget\\packages\\grpc.net.common\\2.29.0\\grpc.net.common.2.29.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\sio\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\sio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\sio\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
     "C:\\Users\\sio\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",

@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using BlazorStyled;
 using grpcCalls;
+using Blazored.LocalStorage;
 
 namespace WebClientWASM
 {
@@ -20,7 +21,7 @@ namespace WebClientWASM
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.Services.AddBlazorStyled();
             builder.RootComponents.Add<App>("app");
-
+            builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();

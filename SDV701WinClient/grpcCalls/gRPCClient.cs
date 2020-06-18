@@ -113,6 +113,19 @@ namespace grpcCalls
             return deserialized;
         }
 
+
+        public static async Task<string> GetCategoriesHash()
+        {
+
+            var channel = GenerateChannel();
+            var client = new NetshopClient(channel);
+            var res = await client.GetCategoriesHashAsync(new GetAllRequest());
+
+            if (res.Error.ErrorResponse != "")
+                throw new Exception(res.Error.ErrorResponse);
+            return res.Hash;
+        }
+
         public static async Task<List<ClientOrder>> GetListOfOrders()
         {
             using var channel = GenerateChannel();

@@ -187,11 +187,11 @@ namespace SDV701BackEnd.DB
             }       
         }
 
-        public static int execScalar(string sql, ParamList paramList) //returns last inserted id
+        public static T execScalar<T>(string sql, ParamList paramList) //returns last inserted id
         {
             using (ConnectionHelper ch = new ConnectionHelper(SettingsBackEnd.CS.ConnectionString))
             {
-                return (int)ch.MakeCommand(sql, paramList).ExecuteScalar();
+                return (T)ch.MakeCommand(sql, paramList).ExecuteScalar();
             }
         }
 

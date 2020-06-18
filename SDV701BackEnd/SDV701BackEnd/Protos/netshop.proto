@@ -11,6 +11,7 @@ service Netshop {
   rpc GetPartsByCategoryId (GetByIdRequest) returns (GetJsonSerializedResponse);
   rpc GetPartById (GetByIdRequest) returns (GetJsonSerializedResponse);
   rpc GetCategories (GetAllRequest) returns (GetJsonSerializedResponse);
+  rpc GetCategoriesHash (GetAllRequest) returns (GetCategoryListHashResponse);
   rpc GetOrders (GetAllRequest) returns (GetJsonSerializedResponse);
   rpc PlaceOrder (PlaceOrderRequest) returns (InsertResponse);
   rpc Update (SetRequest) returns (DeleteUpdateResponse);
@@ -70,4 +71,10 @@ message GetJsonSerializedResponse {
 message GetMessageResponse {
   string response = 1;
   string errorMessage = 2; 
+}
+
+message GetCategoryListHashResponse
+{
+	basicResponse error = 1;
+	string hash = 2; 
 }

@@ -58,6 +58,26 @@ namespace SDV701BackEnd
                 ErrorMessage = error
             });
         }
+
+        public override Task<GetCategoryListHashResponse> GetCategoriesHash(GetAllRequest request, ServerCallContext context)
+        {
+            string res = "";
+            string error = "";
+            try
+            {
+                res = DB.DBExecuter.execScalar<string>("exec sp_GetCategoriesHash", new ParamList { });
+            }
+            catch (Exception e)
+            {
+                error = e.GetBaseException().Message;
+            }
+            return Task.FromResult(new GetCategoryListHashResponse
+            {
+                Hash = res,
+                Error = new basicResponse { ErrorResponse = error },
+            });
+        }
+
         public override Task<GetJsonSerializedResponse> GetOrders(GetAllRequest request, ServerCallContext context)
         {
             string json = "";
@@ -153,7 +173,7 @@ namespace SDV701BackEnd
             try
             {
                 query q = QueryGenerator.Insert(request.Assembly, request.SystemType, request.JSON, request.TPHType);
-                idVal = (int)DBExecuter.execScalar(q.sql, q.paramList);
+                idVal = (int)DBExecuter.execScalar<int>(q.sql, q.paramList);
 
             }
             catch (Exception e)
