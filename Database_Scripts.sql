@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [SDV701A2]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  Database [SDV701A2]    Script Date: 20.06.2020 16:01:49 ******/
 CREATE DATABASE [SDV701A2]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -78,7 +78,7 @@ ALTER DATABASE [SDV701A2] SET QUERY_STORE = OFF
 GO
 USE [SDV701A2]
 GO
-/****** Object:  Table [dbo].[Category]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  Table [dbo].[Category]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -93,7 +93,7 @@ CREATE TABLE [dbo].[Category](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ClientOrder]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  Table [dbo].[ClientOrder]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -113,7 +113,7 @@ CREATE TABLE [dbo].[ClientOrder](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[NPart]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  Table [dbo].[NPart]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -136,7 +136,7 @@ CREATE TABLE [dbo].[NPart](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SubTypes]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  Table [dbo].[SubTypes]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -161,7 +161,7 @@ REFERENCES [dbo].[Category] ([id])
 GO
 ALTER TABLE [dbo].[NPart] CHECK CONSTRAINT [FK_NPart_Category]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_backup_db]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_backup_db]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -187,7 +187,7 @@ BEGIN
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetCategories]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetCategories]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -201,7 +201,7 @@ BEGIN
     select * from Category order by CategoryName
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetCategoriesHash]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetCategoriesHash]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -216,7 +216,7 @@ BEGIN
     select CONVERT(varchar(255),HASHBYTES('SHA1',@cats),2) as result
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetOrders]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetOrders]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -231,7 +231,7 @@ BEGIN
   
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetPartById]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetPartById]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -248,7 +248,7 @@ BEGIN
 	select * from NPart where id = @id  
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetPartsByCategoryId]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetPartsByCategoryId]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -271,7 +271,7 @@ BEGIN
 	end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_PlaceOrder]    Script Date: 19.06.2020 16:48:07 ******/
+/****** Object:  StoredProcedure [dbo].[sp_PlaceOrder]    Script Date: 20.06.2020 16:01:49 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
