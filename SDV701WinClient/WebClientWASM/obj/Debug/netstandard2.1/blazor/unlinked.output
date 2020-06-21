@@ -23,8 +23,8 @@ obj\Debug\netstandard2.1\blazor\unlinked\System.Drawing.Common.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Data.DataSetExtensions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Data.dll
 obj\Debug\netstandard2.1\blazor\unlinked\grpcCalls.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Grpc.Net.Client.Web.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Newtonsoft.Json.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Grpc.Net.Client.Web.dll
 obj\Debug\netstandard2.1\blazor\unlinked\SDV701common.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Grpc.Net.Client.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Diagnostics.DiagnosticSource.dll

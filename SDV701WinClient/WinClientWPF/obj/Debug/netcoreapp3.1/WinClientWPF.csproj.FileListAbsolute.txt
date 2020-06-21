@@ -33,8 +33,6 @@ E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\D
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\PartsEditing\PartsBase.baml
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\PartsEditing\PartsWired.baml
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\MainWindow_OLD.g.cs
-E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\MainWindow_OLD.baml
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\Categories.g.cs
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\Categories.baml
 E:\@SkyDrive\SkyDrive\@backup\@nmit\SDV701\A2\SDV701WinClient\WinClientWPF\obj\Debug\netcoreapp3.1\CategoryEditing.g.cs

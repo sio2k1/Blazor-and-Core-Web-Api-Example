@@ -1192,9 +1192,6 @@ namespace SDV701BackEnd.Protos {
 
   }
 
-  /// <summary>
-  /// The response message containing the greetings.
-  /// </summary>
   public sealed partial class GetPartsResponse : pb::IMessage<GetPartsResponse> {
     private static readonly pb::MessageParser<GetPartsResponse> _parser = new pb::MessageParser<GetPartsResponse>(() => new GetPartsResponse());
     private pb::UnknownFieldSet _unknownFields;

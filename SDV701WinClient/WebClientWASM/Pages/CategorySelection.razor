@@ -1,4 +1,9 @@
-﻿@page "/category"
+﻿@*
+    Author: Oleg Sivers
+    Date: 06.06.2020
+    Desc: Page to display cached \ loaded list of categories
+*@
+@page "/category"
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @using grpcCalls
 @using SDV701common
@@ -11,9 +16,6 @@
 <Styled @bind-Classname="@navLinkStyle">
     margin:10px;
 </Styled>
-
-
-
 
 <Window Caption="Category selection" ErrorMSG="@lastError">
     <div class="@styleContainer">
@@ -53,19 +55,19 @@
         lastError = "";
         try
         {
-            //await localStorage.SetItemAsync("name", "John Smith");
             string currentHash = await localStorage.GetItemAsync<string>("catHash");
             string hash = await gRPCClient.GetCategoriesHash();
 
             if (currentHash == hash)
             {
-                //load from local
+                //load from local storage
                 try
                 {
                     lst = await localStorage.GetItemAsync<List<Category>>("catData");
                     if (lst == null)
                         throw new Exception("Lst is empty");
-                } catch
+                }
+                catch
                 {
                     await getNSaveLst(hash);
                 }
@@ -74,7 +76,7 @@
             {
                 await getNSaveLst(hash);
             }
-            
+
         }
         catch (Exception e)
         {

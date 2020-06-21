@@ -9,7 +9,7 @@
     <Grid>
         <TextBox x:Name="tbxCategoryName" Text="{Binding Categoryname, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="139,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="tbxCategoryName"/>
         <TextBox x:Name="tbxCategoryDescription" Text="{Binding Description, Mode = TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="139,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="tbxCategoryDescription"/>
-        <ListBox x:Name="lbxParts" Margin="0,98,0,0" AutomationProperties.Name="lbxParts" MouseDoubleClick="lbxParts_MouseDoubleClick" SelectionChanged="lbxParts_SelectionChanged">
+        <ListBox x:Name="lbxParts" Margin="0,98,0,0" AutomationProperties.Name="lbxParts" MouseDoubleClick="lbxParts_MouseDoubleClick">
             <ListBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Edit selected..." Click="menuEdit_Click" />

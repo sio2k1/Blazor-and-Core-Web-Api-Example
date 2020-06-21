@@ -1,4 +1,9 @@
-﻿@using WebClientWASM.infrastructure 
+﻿@*
+    Author: Oleg Sivers
+    Date: 06.06.2020
+    Desc: Represents window styling
+*@
+@using WebClientWASM.infrastructure
 <div class="@mainContainer">
     <div class="@window">
         <div class="@header">
@@ -18,7 +23,7 @@
                         <p>@ErrorMSG</p>
                     </div>
                 </div>
-        </div>
+            </div>
         }
         <div class="@nav">
             @if (!string.IsNullOrEmpty(State.previousPage))
@@ -36,7 +41,7 @@
 
 <Styled>
     a {
-    cursor: pointer;
+        cursor: pointer;
     }
 </Styled>
 
@@ -44,6 +49,7 @@
     margin: 1rem;
     font-size: large;
 </Styled>
+
 <Styled @bind-Classname="@mainContainer">
     background-color: rgb(224, 231, 231);;
     min-height: 100vh;
@@ -51,6 +57,7 @@
     align-items: center;
     justify-content: center;
 </Styled>
+
 <Styled @bind-Classname="@window">
     display: flex;
     flex-direction: column;
@@ -62,6 +69,7 @@
     min-height: 576px;
     box-shadow: 3px 4px 28px -3px rgba(0, 0, 0, 0.67);
 </Styled>
+
 <Styled @bind-Classname="@header">
     grid-row: 1;
     background-color: rgb(90, 121, 151);
@@ -75,11 +83,13 @@
     flex: 1;
     grid-row: 2;
 </Styled>
+
 <Styled @bind-Classname="@error">
     margin: 1rem;
     flex-basis:80px;
     grid-row: 3;
 </Styled>
+
 <Styled @bind-Classname="@nav">
     grid-row: 4;
     flex-basis:50px;
@@ -93,6 +103,7 @@
     public string Caption { get; set; }
     [Parameter]
     public RenderFragment ChildContent { get; set; }
+
     private string mainContainer;
     private string window;
     private string header;

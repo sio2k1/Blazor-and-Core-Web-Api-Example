@@ -1,19 +1,16 @@
-﻿using grpcCalls;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: Represents a window for Edit one category
+*/
+using grpcCalls;
 using SDV701common;
 using System;
 using System.Collections.Generic;
-using System.DirectoryServices;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WinClientWPF
 {
@@ -117,14 +114,6 @@ namespace WinClientWPF
                 }
             }
         }
-
-
-
-        /*protected override async Task save()
-        {
-            await update();
-        }*/
-
         private async Task openEdit()
         {
             if (lbxParts.SelectedItem != null)
@@ -143,11 +132,6 @@ namespace WinClientWPF
         private async void lbxParts_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             await openEdit();
-        }
-
-        private void lbxParts_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
         private async void btnRefresh_Click(object sender, RoutedEventArgs e)

@@ -1,19 +1,16 @@
-﻿using grpcCalls;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: Represents a window for Categories
+*/
+using grpcCalls;
 using SDV701common;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using WinClientWPF.Models;
 
 namespace WinClientWPF
 {
@@ -53,11 +50,6 @@ namespace WinClientWPF
             }
             else
                 MessageBox.Show("Nothing selected");
-            //lbxCategories.DrawMode = DrawMode.Normal;
-
-            //List<NPart> lst = await gRPCClient.GetListOfPartsByCategoryId<NPart>((lbxCategories.SelectedItem as Category).CategoryId);
-            //MessageBox.Show("Edit");
-
         }
 
         private void lbxCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)

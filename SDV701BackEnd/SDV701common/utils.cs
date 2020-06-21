@@ -1,19 +1,19 @@
-﻿using Newtonsoft.Json;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 01.06.2020
+ * Desc: Common utils
+*/
+
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Newtonsoft.Json.Serialization;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
-using System.Collections.Concurrent;
-
 
 namespace SDV701common
 {
     public class utils
     {
-
         public static Assembly GetAssemblyByName(string name)
         {
             return AppDomain.CurrentDomain.GetAssemblies().
@@ -41,7 +41,7 @@ namespace SDV701common
             return DeserializeJsonWithTypesSingle<T>(SerializeJsonWithTypes(obj));
         }
 
-        public static String SerializeJsonWithTypes(object obj)
+        public static string SerializeJsonWithTypes(object obj)
         {
             var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
             return JsonConvert.SerializeObject(obj, settings);

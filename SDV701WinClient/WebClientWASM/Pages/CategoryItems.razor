@@ -1,7 +1,12 @@
-﻿@page "/categories/{id:int}"
+﻿@*
+    Author: Oleg Sivers
+    Date: 06.06.2020
+    Desc: Page to display items for one category
+*@
+@page "/categories/{id:int}"
 @using grpcCalls
 @using SDV701common
-@using WebClientWASM.infrastructure 
+@using WebClientWASM.infrastructure
 @inherits backHandler;
 @inject NavigationManager NavigationManager
 
@@ -12,7 +17,6 @@
     justify-content: stretch;
     height: 100%;
 </Styled>
-
 
 <Window Caption="Category items list" ErrorMSG="@lastError">
     <div class="@styleContainer">
@@ -27,7 +31,6 @@
                 </tr>
             </thead>
             <tbody>
-
                 @foreach (var record in lst)
                 {
                     string qtyStyle = "";
@@ -59,13 +62,14 @@
     private string styleContainer;
     private string lastError = "";
     private List<NPart> lst = new List<NPart>();
+
     protected override async void OnInitialized()
     {
         WebClientWASM.infrastructure.State.previousPage = "/category";
         lastError = "";
         try
         {
-            lst = (await gRPCClient.GetListOfPartsByCategoryId<NPart>(id)).FindAll(x=>x.QtyInStock>0);
+            lst = (await gRPCClient.GetListOfPartsByCategoryId<NPart>(id)).FindAll(x => x.QtyInStock > 0);
             lastError = "";
         }
         catch (Exception e)

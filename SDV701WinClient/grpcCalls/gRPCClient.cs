@@ -1,10 +1,14 @@
-﻿using Grpc.Net.Client;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: gRPC client code to use within applications to send request and receive responses over gRPC
+*/
+using Grpc.Net.Client;
 using Grpc.Net.Client.Web;
 using Newtonsoft.Json;
 using SDV701BackEnd.Protos;
 using SDV701common;
 using System;
-//using System.Text.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -13,13 +17,10 @@ using static SDV701BackEnd.Protos.Netshop;
 
 namespace grpcCalls
 {
-
-
-
     public static class gRPCClient
     {
         public static string backEndAddress = "https://localhost:5001";
-        public static bool webChannelMode = false;
+        public static bool webChannelMode = false; // set true for Blazor Wasm, default is false
 
         private static GrpcChannel GenerateChannel()
         {
@@ -42,11 +43,14 @@ namespace grpcCalls
                 TPHType= TPHtype==null?"":TPHtype.Name
             };
         }
+
         public static async Task<int> Update(object obj, Type T, Type TPHtype = null)
         {
             using var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+
             DeleteUpdateResponse res = await client.UpdateAsync(RequestHelper(obj, T, TPHtype));
+
             if (res.Error.ErrorResponse != "")
                 throw new Exception(res.Error.ErrorResponse);
             return res.RowsAffected;
@@ -56,7 +60,9 @@ namespace grpcCalls
         {
             using var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+            
             InsertResponse res = await client.InsertAsync(RequestHelper(obj, T, TPHtype));
+
             if (res.Error.ErrorResponse!="")
                 throw new Exception(res.Error.ErrorResponse);
             return res.InsertedID;
@@ -66,21 +72,23 @@ namespace grpcCalls
         {
             using var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+            
             DeleteUpdateResponse res = await client.DeleteAsync(RequestHelper(obj, T, TPHtype));
+
             if (res.Error.ErrorResponse != "")
                 throw new Exception(res.Error.ErrorResponse);
             return res.RowsAffected;
-
         }
-
 
         public static async Task<List<T>> GetListOfPartsByCategoryId<T>(int CategoryId)
         {
             using var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+
             var res = await client.GetPartsByCategoryIdAsync(new GetByIdRequest { Id = CategoryId });
+
             if (res.ErrorMessage != "")
-                throw new Exception(res.ErrorMessage);
+                throw new Exception(res.ErrorMessage);     
             List<T> deserialized = utils.DeserializeJsonWithTypes<T>(res.Response);
             return deserialized;
         }
@@ -89,10 +97,11 @@ namespace grpcCalls
         {
             using var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+
             var res = await client.GetPartByIdAsync(new GetByIdRequest { Id = PartId });
+
             if (res.ErrorMessage != "")
                 throw new Exception(res.ErrorMessage);
-
             List<NPart> deserialized = utils.DeserializeJsonWithTypes<NPart>(res.Response);
             if (deserialized.Count!=1)
                 throw new Exception("Something went wrong on selection NPart.");
@@ -101,10 +110,9 @@ namespace grpcCalls
 
         public static async Task<List<Category>> GetListOfCategories()
         {
-
-            //using var channel = GrpcChannel.ForAddress(backEndAddress);
             var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+
             var res = await client.GetCategoriesAsync(new GetAllRequest());
 
             if (res.ErrorMessage != "")
@@ -113,12 +121,12 @@ namespace grpcCalls
             return deserialized;
         }
 
-
         public static async Task<string> GetCategoriesHash()
         {
 
             var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+
             var res = await client.GetCategoriesHashAsync(new GetAllRequest());
 
             if (res.Error.ErrorResponse != "")
@@ -130,7 +138,9 @@ namespace grpcCalls
         {
             using var channel = GenerateChannel();
             var client = new NetshopClient(channel);
+
             var res = await client.GetOrdersAsync(new GetAllRequest());
+
             if (res.ErrorMessage != "")
                 throw new Exception(res.ErrorMessage);
             var deserialized = JsonConvert.DeserializeObject<List<ClientOrder>>(res.Response);
@@ -146,40 +156,6 @@ namespace grpcCalls
             if (res.Error.ErrorResponse != "")
                 throw new Exception(res.Error.ErrorResponse);
             return res.InsertedID;
-        }
-
-        public static string Call()
-        {
-            //DTO d = new DTO();
-
-            //List<keyvalue> row1 = new List<keyvalue> { new keyvalue { key = "field1", value = 10 }, new keyvalue { key = "field2", value = "ssss" } };
-
-            //d.data.Add(row1);
-            //string s = JsonSerializer.Serialize(d);
-
-            //DTO d2 = JsonSerializer.Deserialize<DTO>(s);
-
-
-
-
-
-            using var channel = GenerateChannel();
-            var client = new NetshopClient(channel);
-            var res = client.GetParts(new GetAllRequest());
-            //TableForMapping T = new TableForMapping();
-            //var reader = new System.IO.StringReader(res.Response);
-            //T.ReadXml(reader);
-            //List<Type> tl = new List<Type> { typeof(NWiredWirelesspart), typeof(NWiredPart), typeof(NWirelesspart) };
-
-            //var lst = T.MapHierarchy<NPart>(tl, "SystemType");
-
-
-            var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
-            //var json = JsonConvert.SerializeObject(res, settings);
-            var deserialized = JsonConvert.DeserializeObject<List<NPart>>(res.Response, settings);
-
-
-            return res.Response;
         }
     }
 }

@@ -1,12 +1,10 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 01.06.2020
+ * Desc: Settings load and make available to access within the app.
+*/
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
 using System.Data.Common;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SDV701BackEnd.infrastructure
 {
@@ -25,7 +23,7 @@ namespace SDV701BackEnd.infrastructure
         public DbProviderFactory DBProvider;
 
         /// <summary>
-        /// We have to call it upon settings load, it will creat provider.
+        /// We have to call it upon settings load, it will create a provider.
         /// </summary>
         public void InitProvider()
         {
@@ -33,11 +31,8 @@ namespace SDV701BackEnd.infrastructure
         }
     }
 
-   
-
     public class SettingsBackEnd
     {
         public static ConnectionSettings CS = new ConnectionSettings();
- 
     }
 }

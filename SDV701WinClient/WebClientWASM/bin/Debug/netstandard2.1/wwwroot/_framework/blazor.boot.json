@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "WebClientWASM.dll": "sha256-UfjXnU8cQrsOtArh\/tv4p9Zpq1CaT3\/wQlvwO1q4Z+s=",
+      "WebClientWASM.dll": "sha256-lKBM6XwwkFnRKnaQxY9rro5vP5dr8mfQewKX6MXLYso=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-o+nIDOlv+7C51lX5qskB167ESJHrLYQiPQU9lsq7bOk=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=",
@@ -30,10 +30,10 @@
       "System.Drawing.Common.dll": "sha256-vcCLMX4xAsUqKuQjjIkzu1O9pHGO\/tdvysgSmEjL6oo=",
       "System.Data.DataSetExtensions.dll": "sha256-eejp4oI3sQBq\/tI6GsJNaPu3Dkdot5Vbn8+R3w2vYLE=",
       "System.Data.dll": "sha256-dxfTuT6ffPMmvuUUTfv7+bpLtOZZZHQdz77hjhy9qHw=",
-      "grpcCalls.dll": "sha256-JO00r2PB+CUpur7DX+hpgOdgIVuZJdolIXjW2S4ee2s=",
-      "Grpc.Net.Client.Web.dll": "sha256-wsQXcXvTL47gA+c\/lFuiOf2JuZve4vgT6BQQOag6YbM=",
+      "grpcCalls.dll": "sha256-t3UIzhs1x9EsjIoM3ZbFK8yJeohZ0KlNuXICk\/\/3J98=",
       "Newtonsoft.Json.dll": "sha256-mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=",
-      "SDV701common.dll": "sha256-oBfb4asQyM\/PzZBzDuYBJsZdFZnfWHJmy1R36QmDTUY=",
+      "Grpc.Net.Client.Web.dll": "sha256-wsQXcXvTL47gA+c\/lFuiOf2JuZve4vgT6BQQOag6YbM=",
+      "SDV701common.dll": "sha256-UADF9MsgUw2L2GUjkERL8mayBQ24UATHbYds0VB0rI4=",
       "Grpc.Net.Client.dll": "sha256-5inaTRr+Ks9Sr5\/FDWckqNjipSsth6jaGiBZ5IGB6l4=",
       "System.Diagnostics.DiagnosticSource.dll": "sha256-aelwwQVLeYV4cQ8yYG5noplRTfTBr1JH6wuOHCJuQKc=",
       "System.Runtime.Extensions.dll": "sha256-1FBfAreOfbXDp0WA294BCrk0EIa5ZqlghOuvDlqFtk8=",
@@ -77,10 +77,10 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "WebClientWASM.pdb": "sha256-zcsa0+aRpOYOtmiexvykehTubyU5SJnjpbkcCxvBkkg=",
-      "grpcCalls.pdb": "sha256-Th+z7dK9i1Rl3tjhNGjIAvXLjEA14FMJ6jGzOPCjrFM=",
+      "WebClientWASM.pdb": "sha256-JPB86jNjnjGD\/YgOE7cKmhEcYDzW6ohpGwzigAXN\/Ec=",
+      "grpcCalls.pdb": "sha256-yM9ENAgaH0CiO3JVrYULUX6nApPzDrM1YECHBQSsPcc=",
       "Grpc.Net.Client.Web.pdb": "sha256-hBcxkZMdzHm+FbD47LuFV8HgCWNub4QdSWJuCtSUZGo=",
-      "SDV701common.pdb": "sha256-RK356qPKoZDvcwceYHem3EF9eon3KThwJyMMbfaNw+Q=",
+      "SDV701common.pdb": "sha256-xzY06vUNF5\/SvN1NwLDvaXI8egpYZbj4cTUhb6EeLaM=",
       "Grpc.Net.Client.pdb": "sha256-oDyZvpQJ8uTdMQtg+oF\/JX+N9G\/vFWqSX\/PqGavUOwU=",
       "Grpc.Net.Common.pdb": "sha256-sczBdbjanXWWjgP2p6oaaVJNUaFJ2uPg9FKkWnF3sQU=",
       "Grpc.Core.Api.pdb": "sha256-bQTFgzZAcKybC8BcNkSdCW6ujUDd3eFxP0qIouoQERg=",

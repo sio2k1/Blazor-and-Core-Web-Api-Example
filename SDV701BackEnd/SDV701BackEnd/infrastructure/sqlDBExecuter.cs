@@ -1,13 +1,14 @@
-﻿using SDV701BackEnd.infrastructure;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 01.06.2020
+ * Desc: A mapping code for select-like queries to List<T>
+*/
+using SDV701BackEnd.infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Data.SqlClient;
 using System.Reflection;
-using System.Threading.Tasks;
-
-
 
 namespace SDV701BackEnd.DB
 {
@@ -134,7 +135,6 @@ namespace SDV701BackEnd.DB
     }
     public static class DBExecuter
     {
-
         public static TableForMapping SQLRequest(string sql, ParamList paramList)
         {
             using (ConnectionHelper ch = new ConnectionHelper(SettingsBackEnd.CS.ConnectionString))
@@ -177,7 +177,6 @@ namespace SDV701BackEnd.DB
                 return ch.MakeCommand(sql, paramList, CommandType.StoredProcedure).ExecuteNonQuery();
             }
         }
-
 
         public static int execNonQuery(string sql, ParamList paramList)
         {

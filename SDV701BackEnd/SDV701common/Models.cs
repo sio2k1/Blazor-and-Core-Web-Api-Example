@@ -1,5 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 01.06.2020
+ * Desc: Models and validation
+*/
+using System;
 using System.Linq;
 
 namespace SDV701common
@@ -21,7 +25,7 @@ namespace SDV701common
             return res;
         }
     }
-    public abstract class NPart:Model
+    public abstract class NPart : Model
     {
         public int id { get; set; } = -1;
         public string Name { get; set; }
@@ -107,7 +111,7 @@ namespace SDV701common
         }
     }
 
-    public class Category:Model
+    public class Category : Model
     {
         public int id { get; set; } = -1;
         public string Categoryname { get; set; }
@@ -154,7 +158,6 @@ namespace SDV701common
         }
 
     }
-
 
     [System.AttributeUsage(System.AttributeTargets.Property)]
     public class ExcludeFromInsertUpdate : System.Attribute { }

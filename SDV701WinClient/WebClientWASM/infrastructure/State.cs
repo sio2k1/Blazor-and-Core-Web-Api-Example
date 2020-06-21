@@ -1,8 +1,9 @@
-﻿using SDV701common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 06.06.2020
+ * Desc: Represents application state
+*/
+using SDV701common;
 
 namespace WebClientWASM.infrastructure
 {

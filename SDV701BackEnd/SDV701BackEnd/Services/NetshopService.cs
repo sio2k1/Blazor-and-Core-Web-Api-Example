@@ -1,12 +1,11 @@
+/*
+ * Author: Oleg Sivers
+ * Date: 01.06.2020
+ * Desc: RPCs logic to convert requests into responces
+*/
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text.Json;
 using System.Threading.Tasks;
-using System.Xml;
 using Grpc.Core;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -29,7 +28,6 @@ namespace SDV701BackEnd
         {
             List<Type> tl = new List<Type> { typeof(NWiredWirelesspart), typeof(NWiredPart), typeof(NWirelesspart) };
             List<NPart> res = DB.DBExecuter.SQLToReader("select * from parts").MapHierarchy<NPart>(tl, "ClassName");
-            //var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
             var json = utils.SerializeJsonWithTypes(res);
 
             return Task.FromResult(new GetHierarchicalJsonSerializedResponse
@@ -217,8 +215,6 @@ namespace SDV701BackEnd
             int idVal = -1;
             try
             {
-                //sp_PlaceOrder @PartsId int, @PartsQty int, @ClientName varchar(255), @ClientEmail varchar(255)
-
                 ClientOrder validation = new ClientOrder { ClientEMail = request.ClientEMail, ClientName = request.ClientName, Quantity = request.PartsQty };
                 string validationResult = validation.IsValid();
 
@@ -236,9 +232,6 @@ namespace SDV701BackEnd
                     idVal = DB.DBExecuter.execScalarSPAutoFillParams("sp_PlaceOrder", pList); // raise an exception in case
                 } else
                     throw new Exception($"Validation error: {validationResult}");
-
-
-
             }
             catch (Exception e)
             {

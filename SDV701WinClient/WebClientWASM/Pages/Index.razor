@@ -1,4 +1,9 @@
-﻿@page "/"
+﻿@*
+    Author: Oleg Sivers
+    Date: 06.06.2020
+    Desc: Index page
+*@
+@page "/"
 
 <Window Caption="SDV701A2: Main">
     <div class="@styleContainer">
@@ -10,12 +15,14 @@
         </NavLink>
     </div>
 </Window>
+
 <Styled @bind-Classname="@styleContainer">
     display: flex;
     align-items: center;
     justify-content: center;
     min-height:400px;
 </Styled>
+
 @code
 {
     private string styleContainer;

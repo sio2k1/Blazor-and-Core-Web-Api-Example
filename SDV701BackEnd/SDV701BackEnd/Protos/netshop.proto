@@ -1,12 +1,15 @@
+/*
+ * Author: Oleg Sivers
+ * Date: 01.06.2020
+ * Desc: gRPC messages and RPCs definition
+*/
 syntax = "proto3";
 
 option csharp_namespace = "SDV701BackEnd.Protos";
 
 package netshop;
 
-// The greeting service definition.
 service Netshop {
-  // Sends a greeting
   rpc GetParts (GetAllRequest) returns (GetHierarchicalJsonSerializedResponse);
   rpc GetPartsByCategoryId (GetByIdRequest) returns (GetJsonSerializedResponse);
   rpc GetPartById (GetByIdRequest) returns (GetJsonSerializedResponse);
@@ -51,7 +54,6 @@ message GetByIdRequest {
 	int32 Id = 1;
 }
 
-// The response message containing the greetings.
 message GetPartsResponse {
   string message = 1;
   string response = 2;

@@ -1,18 +1,15 @@
-﻿using grpcCalls;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: Window for displaying orders
+*/
+using grpcCalls;
 using SDV701common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WinClientWPF
 {
@@ -31,9 +28,8 @@ namespace WinClientWPF
             orderlist = await gRPCClient.GetListOfOrders();
             GridOrders.ItemsSource = orderlist;
             recalcSum();
-
-
         }
+
         public void recalcSum()
         {
             string currency = orderlist.Count > 0 ? orderlist.First().Currency : "";
@@ -42,7 +38,6 @@ namespace WinClientWPF
 
         private async void menuDeleteSelected_Click(object sender, RoutedEventArgs e)
         {
-            ;
             if (GridOrders.SelectedItem != null)
             {
                 try

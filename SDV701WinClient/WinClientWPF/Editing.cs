@@ -1,9 +1,12 @@
-﻿using grpcCalls;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: Superclass for all windows with editing functionality (cat, parts editing)
+*/
+using grpcCalls;
 using Newtonsoft.Json;
 using SDV701common;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -39,7 +42,6 @@ namespace WinClientWPF
             {
                 prop.SetValue(_obj, prop.GetValue(original));
             }
-            //return JsonConvert.SerializeObject(_obj) == originalSerializedObj ? false : true;
         }
 
         protected virtual Task<int> save() 

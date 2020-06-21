@@ -1,21 +1,15 @@
-﻿using grpcCalls;
+﻿/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: Parent window for editing all types of parts 
+*/
+using grpcCalls;
 using SDV701common;
 using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using WinClientWPF.PartsEditing;
-using WinClientWPF.utils;
 
 namespace WinClientWPF
 {
@@ -32,7 +26,6 @@ namespace WinClientWPF
     public partial class BaseParts : Editing
     {
         private NPart part;
-
 
         public BaseParts(NPart prt)
         {
@@ -65,30 +58,6 @@ namespace WinClientWPF
             {
                 MessageBox.Show($"Type: {prt.GetType().Name} not handled in BaseParts constructor.");
             }
-
-           /* NPartContainer container = null;
-            switch (prt.GetType().Name)
-            {             
-                case "NWiredPart":
-                    InitEditing(part, typeof(NWiredPart), typeof(NPart));
-                    container = new PartsWired(part);
-                    //Activator.CreateInstance()
-                    extraSpecs.Content = container;
-                    break;
-                case "NWiredWirelesspart":
-                    InitEditing(part, typeof(NWiredWirelesspart), typeof(NPart));
-                    container = new PartsWiredWireless(part);
-                    extraSpecs.Content = container;
-                    break;
-                case "NWirelesspart":
-                    InitEditing(part, typeof(NWirelesspart), typeof(NPart));
-                    container = new PartsWireless(part);
-                    extraSpecs.Content = container;
-                    break;
-                default:
-                    MessageBox.Show($"Type: {prt.GetType().Name} not handled in BaseParts constructor.");
-                    break;
-            }*/
         }
 
         public async Task Init()
@@ -114,20 +83,5 @@ namespace WinClientWPF
             tbxLastModified.GetBindingExpression(TextBox.TextProperty).UpdateTarget();
             return rows;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            /*try 
-            {
-                ModelToWPFMapper.SetModelValuesBasedOnComboBoxes(part, mainGrid);
-                ModelToWPFMapper.SetModelValuesBasedOnTextBoxes(part, mainGrid);
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            MessageBox.Show("dd");*/
-        }
-
-
     }
 }

@@ -1,111 +1,109 @@
-﻿@page "/oderitem/{id:int}"
+﻿@*
+    Author: Oleg Sivers
+    Date: 06.06.2020
+    Desc: Page for ordering a specific item
+*@
+@page "/oderitem/{id:int}"
 @using grpcCalls
 @using SDV701common
 @using WebClientWASM.infrastructure
 @using WebClientWASM.components
-    <Styled @bind-Classname="@styleContainer">
-        display: grid;
-        grid-template-areas:
-        'ordertable ordertable'
-        'clientdetails order'
-        'confirmation confirmation';
-        grid-gap: 10px;
-    </Styled>
+<Styled @bind-Classname="@styleContainer">
+    display: grid;
+    grid-template-areas:
+    'ordertable ordertable'
+    'clientdetails order'
+    'confirmation confirmation';
+    grid-gap: 10px;
+</Styled>
 
-
-    <Styled>
-        .order-placement-table {
+<Styled>
+    .order-placement-table {
         grid-area: ordertable;
-        }
-        .order-placement-client-details {
+    }
+
+    .order-placement-client-details {
         grid-area: clientdetails;
-        }
-        .order-placement-order {
+    }
+
+    .order-placement-order {
         grid-area: order;
-        }
-        .order-confirmation {
+    }
+
+    .order-confirmation {
         grid-area: confirmation;
-        }
+    }
+</Styled>
 
-    </Styled>
+<Window Caption="Order Placement" ErrorMSG="@lastError">
+    <EditForm Model="@OFM" OnValidSubmit="OnSubmitClick">
+        <DataAnnotationsValidator />
 
-
-    <Window Caption="Order Placement" ErrorMSG="@lastError">
-        <EditForm Model="@OFM" OnValidSubmit="OnSubmitClick">
-            <DataAnnotationsValidator />
-
-            <div class="@styleContainer">
-
-                <div class="order-placement-table">
-                    <table class="table-auto w-full m-1">
-                        <thead>
-                            <tr>
-                                <th class="border px-4 py-2">Name</th>
-                                <th class="border px-4 py-2">Details</th>
-                                <th class="border px-4 py-2">Price</th>
-                                <th class="border px-4 py-2">Quantity</th>
-                                <th class="border px-4 py-2">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="border px-4 py-2">@part.Name</td>
-                                <td class="border px-4 py-2">@((MarkupString)part.ReturnOODetails().Replace("\r\n","<br>"))</td>
-                                <td class="border px-4 py-2">@part.Price @part.Currency</td>
-                                <td class="border px-4 py-2"><input disabled="@IsDisabled" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" @bind="@OFM.Qty" min="1" max="@part.QtyInStock" type="number" placeholder=""></td>
-                                <td class="border px-4 py-2">@(part.Price*OFM.Qty) @part.Currency</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="order-placement-client-details flex w-2/4">
-                    <input disabled="@IsDisabled" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-1" @bind="@OFM.Name" type="text" placeholder="Client Name">
-                    <input disabled="@IsDisabled" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-1" @bind="@OFM.EmailAddress" type="text" placeholder="Client E-Mail">
-                </div>
-                <div class="order-placement-order flex justify-end">
-                    @if (!IsDisabled)
-                    {
-                        <button type="submit" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-1">
-                            Confirm
-                        </button>
-                    }
-                    else
-                    {
-                        <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed">
-                            Confirm
-                        </button>
-                    }
-                </div>
-
-                @if (newOrderId != -1) //Order confirmation message
+        <div class="@styleContainer">
+            <div class="order-placement-table">
+                <table class="table-auto w-full m-1">
+                    <thead>
+                        <tr>
+                            <th class="border px-4 py-2">Name</th>
+                            <th class="border px-4 py-2">Details</th>
+                            <th class="border px-4 py-2">Price</th>
+                            <th class="border px-4 py-2">Quantity</th>
+                            <th class="border px-4 py-2">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">@part.Name</td>
+                            <td class="border px-4 py-2">@((MarkupString)part.ReturnOODetails().Replace("\r\n","<br>"))</td>
+                            <td class="border px-4 py-2">@part.Price @part.Currency</td>
+                            <td class="border px-4 py-2"><input disabled="@IsDisabled" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" @bind="@OFM.Qty" min="1" max="@part.QtyInStock" type="number" placeholder=""></td>
+                            <td class="border px-4 py-2">@(part.Price*OFM.Qty) @part.Currency</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="order-placement-client-details flex w-2/4">
+                <input disabled="@IsDisabled" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-1" @bind="@OFM.Name" type="text" placeholder="Client Name">
+                <input disabled="@IsDisabled" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-1" @bind="@OFM.EmailAddress" type="text" placeholder="Client E-Mail">
+            </div>
+            <div class="order-placement-order flex justify-end">
+                @if (!IsDisabled)
                 {
-                    <div class="order-confirmation">
-                        <ConfirmationMessage Title="Your order placed successfully">Your order number is <b>#@newOrderId</b><br><b>@part.Name</b> @OFM.Qty pcs. Total: <b>@(part.Price*OFM.Qty) @part.Currency</b><br>Client name: <b>@OFM.Name</b><br>Client e-mail: <b>@OFM.EmailAddress</b></ConfirmationMessage>
-                    </div>
+                    <button type="submit" class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded m-1">
+                        Confirm
+                    </button>
+                }
+                else
+                {
+                    <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed">
+                        Confirm
+                    </button>
                 }
             </div>
-            <ValidationSummary />
-        </EditForm>
-    </Window>
+            @if (newOrderId != -1) //Order confirmation message
+            {
+                <div class="order-confirmation">
+                    <ConfirmationMessage Title="Your order placed successfully">Your order number is <b>#@newOrderId</b><br><b>@part.Name</b> @OFM.Qty pcs. Total: <b>@(part.Price*OFM.Qty) @part.Currency</b><br>Client name: <b>@OFM.Name</b><br>Client e-mail: <b>@OFM.EmailAddress</b></ConfirmationMessage>
+                </div>
+            }
+        </div>
+        <ValidationSummary />
+    </EditForm>
+</Window>
 
 @code {
-        [Parameter]
-        public int id { get; set; }
+    [Parameter]
+    public int id { get; set; }
+
     private string styleContainer;
     private string lastError = "";
-
     private NPart part = new NEmptyPart();
     private OrderFormModel OFM = new OrderFormModel();
-
-    //private string clientName = "";
-    //private string clientEMail = "";
-    //private int qty = 1;
     private int newOrderId = -1;
     private bool IsDisabled = false;
 
     private void OnQtyChange()
     {
-
         this.StateHasChanged();
     }
 
@@ -144,12 +142,10 @@
         else
             refreshData = true;
 
-
-        if (refreshData)
+        if (refreshData) //if there was no part in previous state
         {
             try
             {
-                //var lst = await gRPCClient.GetPartsById(id);
                 State.SelectedPart = await gRPCClient.GetPartsById(id);
                 part = State.SelectedPart;
                 lastError = "";
