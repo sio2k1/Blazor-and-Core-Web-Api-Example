@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "WebClientWASM.dll": "sha256-lKBM6XwwkFnRKnaQxY9rro5vP5dr8mfQewKX6MXLYso=",
+      "WebClientWASM.dll": "sha256-D54sTEUbrPTHVNZo9fj3SQJ1wmaRgNBbK\/9SYwFMgbY=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-o+nIDOlv+7C51lX5qskB167ESJHrLYQiPQU9lsq7bOk=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
       "System.Xml.Linq.dll": "sha256-IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=",
@@ -77,7 +77,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-dwm+rKImjhxtOmHHVpSxOgl2oh2R26xOWihLaZSv7Vs="
     },
     "pdb": {
-      "WebClientWASM.pdb": "sha256-JPB86jNjnjGD\/YgOE7cKmhEcYDzW6ohpGwzigAXN\/Ec=",
+      "WebClientWASM.pdb": "sha256-i3ghqFWrmzvU5thaADFg6\/2on4DpQYWaYriIqvYh6T4=",
       "grpcCalls.pdb": "sha256-yM9ENAgaH0CiO3JVrYULUX6nApPzDrM1YECHBQSsPcc=",
       "Grpc.Net.Client.Web.pdb": "sha256-hBcxkZMdzHm+FbD47LuFV8HgCWNub4QdSWJuCtSUZGo=",
       "SDV701common.pdb": "sha256-xzY06vUNF5\/SvN1NwLDvaXI8egpYZbj4cTUhb6EeLaM=",

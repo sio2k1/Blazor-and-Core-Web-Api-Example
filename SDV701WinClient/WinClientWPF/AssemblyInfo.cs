@@ -1,3 +1,8 @@
+/*
+ * Author: Oleg Sivers
+ * Date: 03.06.2020
+ * Desc: Auto-generated
+*/
 using System.Windows;
 
 [assembly: ThemeInfo(

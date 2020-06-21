@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\lKBM6XwwkFnRKnaQxY9rro5vP5dr8mfQewKX6MXLYso=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\D54sTEUbrPTHVNZo9fj3SQJ1wmaRgNBbK-9SYwFMgbY=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebClientWASM.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebClientWASM.dll.br"
     },
@@ -346,7 +346,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JPB86jNjnjGD-YgOE7cKmhEcYDzW6ohpGwzigAXN-Ec=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\i3ghqFWrmzvU5thaADFg6-2on4DpQYWaYriIqvYh6T4=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebClientWASM.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebClientWASM.pdb.br"
     },
@@ -406,7 +406,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-cvWnxEsmhCU8aEtiFQ1CLz9oLRAa73_kMWTkyag_fM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\P2qTgGTlb3gVkY9vuZCnbgk_1LEvTfp_Z1x6L5KjXW0=.hash",
       "Source": "E:\\@SkyDrive\\SkyDrive\\@backup\\@nmit\\SDV701\\A2\\SDV701WinClient\\WebClientWASM\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }
