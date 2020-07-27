@@ -39,6 +39,10 @@ WPF client allows user to:
 - Add and modify in-stock items details
 - Track an item modification date and time
 
+Edit an item:
+![Edit an item](/screenshots/itemediting.png 'Edit an item')
+
+List of orders:
 ![List of orders](/screenshots/orderlist.png 'List of orders')
 
 ### WEB client
@@ -48,3 +52,13 @@ WEB client allows user to:
 
 - View items categories
 - Order item of one type (This limitation made according to course requirements)
+
+Categories:
+![WebClient categories](/screenshots/WEBCatList.png 'WebClient categories')
+
+Items of a category:
+![WebClient items](/screenshots/WEBItemsList.png 'WebClient items')
+
+Items of a category:
+![WebClient order](/screenshots/WEBOrder.png 'WebClient order')
+![WebClient order green](/screenshots/WEBOrderGreen.png 'WebClient order green')
