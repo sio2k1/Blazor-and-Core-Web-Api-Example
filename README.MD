@@ -20,7 +20,7 @@ Server-side application built using .net Core 3.1 gRPC service with MSSQL Server
 The app supports gRPC calls over HTTP/2 and gRPC Web for web client communication.
 My application has [shared assembly](/SDV701BackEnd/SDV701common), mainly to store data transfer objects and reuse it in client applications.
 Most of server-side logic, like item quantity checks and forming orders located inside SQL stored procedures.
-Listings of stores procedures can be found [here](Database_Scripts.sql).
+Listings of stored procedures can be found [here](Database_Scripts.sql).
 In this project I'm using gRPC mostly as a carrier of serialized JSON objects.
 
 A source code of the application is located [here](/SDV701BackEnd).
