@@ -69,7 +69,7 @@ namespace WinClientWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WinClientWPF;component/orderswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WinClientWPF;V1.0.0.0;component/orderswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\OrdersWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
